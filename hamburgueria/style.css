@@ -1,0 +1,336 @@
+/* Reset básico para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.texto-degrade {
+    background: linear-gradient(to right, #fcc40f, #eb533b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Define fonte padrão para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+
+header {
+    position: fixed;
+    width: 100vw;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+header nav {
+    width: 80vw;
+}
+
+header nav ul {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    align-items: center;
+}
+
+nav ul .carrinho {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.carrinho h1 {
+    font-size: 15px;
+    width: 2rem;
+    height: 1rem;
+    border-radius: 10px;
+    color: #222;
+    text-align: center;
+    background-color: #fff;
+}
+
+.propaganda {
+    padding-top: 4.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.informacao {
+    margin: 0 auto;
+    padding-top: 3rem;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.informacao h2 {
+    font-size: 14px;
+}
+
+.status-atendimento {
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 0.2rem;
+}
+
+#status-hora {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    height: 20px;
+}
+
+.propaganda img {
+    width: auto;
+    /* Largura relativa à viewport */
+    height: 250px;
+    /* Altura ajusta proporcionalmente */
+    max-height: 250px;
+    /* Opcional: limite máximo na altura */
+    display: block;
+    /* Evita espaços extras abaixo da imagem */
+    margin: 0 auto;
+    /* Centraliza a imagem se quiser */
+    object-fit: cover;
+    /* Garante que a imagem inteira apareça sem cortar */
+}
+
+#carrinho-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Espaço entre conteúdo e botão */
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+#carrinho-sidebar.aberto {
+    transform: translateX(0);
+}
+
+#itens-carrinho {
+    flex: 1;
+    /* Ocupar todo o espaço restante */
+    overflow-y: auto;
+}
+
+#carrinho-sidebar button {
+    padding: 0.5rem 1rem;
+    background-color: #fcc40f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#carrinho-sidebar button:hover {
+    background-color: #14acc4;
+    color: #fff;
+}
+
+#itens-carrinho {
+    margin-top: 1rem;
+}
+
+.item-carrinho {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+}
+
+.item-carrinho img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    /* mantém proporção sem distorcer */
+    border-radius: 5px;
+    /* opcional, para deixar visual mais agradável */
+}
+
+.options {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.options ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+#categorias li {
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#categorias li.ativo {
+    background-color: #eee;
+    /* Fundo diferenciado */
+    text-decoration: underline;
+    /* Sublinhado */
+    font-weight: bold;
+    /*Negrito*/
+}
+
+.menu-item {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 300px;
+    margin: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu-item h2 {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.menu-item p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+.menu-item .preco {
+    font-weight: bold;
+    color: #eb533b;
+    font-size: 1.2rem;
+}
+
+.menu-item button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #fcc40f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item button:hover {
+    background-color: #eb533b;
+    color: #fff;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+
+
+footer {
+    padding-top: 3rem;
+    background-color: #222;
+    color: #eee;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Arial,
+        sans-serif;
+    font-size: 14px
+}
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 1024px) {
+
+  header nav ul {
+    grid-template-columns: 1fr auto;
+    row-gap: 1rem;
+  }
+
+  .options ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .menu-item {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .propaganda img {
+    height: auto;
+    width: 100%;
+    max-height: 200px;
+  }
+}
+
+/* Responsividade para celulares pequenos */
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    height: auto;
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  header nav ul {
+    text-align: center;
+  }
+
+  .carrinho h1 {
+    font-size: 14px;
+    width: auto;
+    height: auto;
+  }
+
+  .options ul {
+    width: 100%;
+  }
+
+  .menu-item {
+    width: 100%;
+  }
+
+  #carrinho-sidebar {
+    width: 100vw;
+  }
+}

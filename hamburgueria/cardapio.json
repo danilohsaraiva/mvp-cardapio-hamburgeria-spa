@@ -1,0 +1,73 @@
+[
+  {
+    "tipo": "hamburguer",
+    "nome": "Texas BBQ",
+    "descricao": "Um hambúrguer suculento de 180g, coberto com queijo cheddar derretido, bacon crocante, cebola caramelizada e um irresistível molho barbecue artesanal, tudo isso no pão brioche levemente tostado.",
+    "preco": "R$ 29,90",
+    "imagem": "img/hamb-1.png"
+  },
+  {
+    "tipo": "hamburguer",
+    "nome": "Veggie Supreme",
+    "descricao": "Hambúrguer 100% vegetal feito com grão-de-bico, cenoura e temperos selecionados, acompanhado de alface americana, tomate fresco, cebola roxa e maionese vegana, servido no pão integral.",
+    "preco": "R$ 26,90",
+    "imagem": "img/hamb-2.png"
+  },
+  {
+    "tipo": "hamburguer",
+    "nome": "Cheddar Melt Deluxe",
+    "descricao": "Dois smash burgers de 100g cada, generosamente cobertos com cheddar inglês, cebola grelhada e maionese especial da casa, no pão australiano.",
+    "preco": "R$ 32,90",
+    "imagem": "img/hamb-3.png"
+  },
+  {
+    "tipo": "hamburguer",
+    "nome": "Picante Mexicano",
+    "descricao": "Hambúrguer artesanal de carne bovina com queijo muçarela, jalapeños, guacamole, alface e molho picante defumado, servido no pão de milho.",
+    "preco": "R$ 28,90",
+    "imagem": "img/hamb-4.png"
+  },
+  {
+    "tipo": "hamburguer",
+    "nome": "Duplo Bacon Trufado",
+    "descricao": "Dois hambúrgueres de 120g cada, com bacon em fatias, queijo prato, maionese trufada e folhas de rúcula, no pão brioche selado na manteiga.",
+    "preco": "R$ 34,90",
+    "imagem": "img/hamb-5.png"
+  },
+  {
+    "tipo": "hamburguer",
+    "nome": "Blue Cheese Explosion",
+    "descricao": "Hambúrguer suculento de 180g com queijo gorgonzola derretido, cebola roxa crispy, geleia de pimenta artesanal e rúcula fresca, tudo no pão brioche selado.",
+    "preco": "R$ 33,90",
+    "imagem": "img/hamb-6.png"
+  },
+  {
+    "tipo": "bebida",
+    "nome": "Coca-Cola",
+    "descricao": "Coca lata 350ml",
+    "preco": "R$ 4,70",
+    "imagem": "img/refri-1.png"
+  },
+  {
+    "tipo": "bebida",
+    "nome": "Guaraná",
+    "descricao": "Guaraná Antarctica 350ml",
+    "preco": "R$ 4,37",
+    "imagem": "img/refri-2.png"
+  },
+    {
+    "tipo": "combo",
+    "nome": "Combo Trio",
+    "descricao": "Combo especial com três hambúrgueres artesanais e uma batata frita grande para compartilhar ou se deliciar sozinho.",
+    "preco": "R$ 89,90",
+    "imagem": "img/combo-1.jpg"
+  },
+    {
+    "tipo": "combo",
+    "nome": "Combo Clássico",
+    "descricao": "Delicioso combo com um hambúrguer suculento, refrigerante de 300ml geladinho e uma porção crocante de batata frita para acompanhar.",
+    "preco": "R$ 39,90",
+    "imagem": "img/combo-2.jpg"
+  }
+    
+]

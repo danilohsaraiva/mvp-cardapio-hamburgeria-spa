@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Hamburgueria MVP</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li class="texto-degrade">CARDÁPIO</li>
+        <li class="carrinho" id="icone-carrinho" style="cursor:pointer">
+          <img src="img/carrinho-de-compras .png" width="30" height="30">
+          <div>
+            <h1 id="contador-carrinho">0</h1>
+            <p class="texto-degrade">Carrinho</p>
+          </div>
+
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <!-- Aba lateral do carrinho -->
+    <div id="carrinho-sidebar" class="carrinho-fechado">
+      <h2>Meu Carrinho <img src="img/fechar.png" alt="Fechar" width="20" style="cursor: pointer; margin-right: 10px;"
+          onclick="fecharCarrinho()"></h2>
+      <div id="itens-carrinho">
+        <!-- Itens serão adicionados aqui -->
+      </div>
+      <button onclick="finalizarPedido()">Finalizar Pedido</button>
+
+    </div>
+  </section>
+
+  <section>
+    <div id="propaganda" class="propaganda">
+      <img src="img/desconto.png" alt="Propaganda">
+    </div>
+  </section>
+
+  <section class="informacao">
+    <div>
+      <img src="img/localizacao.png" width="30" height="30">
+      <h2 class="texto-degrade">Rua A, Nº 152 - Ituiutaba-MG</h2>
+    </div>
+
+    <h2 class="status-atendimento texto-degrade">Seg - Dom das 18h às 22h</h2>
+    <h2 id="status-hora">Aberto</h2>
+    </li>
+  </section>
+
+  <section id="categorias" class="options">
+    <ul>
+      <li>TODOS</li>
+      <li>HAMBURGERS</li>
+      <li>BEBIDAS</li>
+      <li>OUTROS</li>
+    </ul>
+  </section>
+
+  <section id="menu" class="menu"></section>
+
+
+  <footer <p>© 2025 Danilo Saraiva™. Todos os direitos reservados.</p>
+    <p>Desenvolvido com 💻 por Danilo Saraiva™</p>
+  </footer>
+
+  <script src="script-hora.js"></script>
+  <script src="script-propaganda.js"></script>
+  <script src="script-menu.js"></script>
+  <script src="script-carrinho.js"></script>
+</body>
+
+</html>
